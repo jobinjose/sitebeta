@@ -25,41 +25,27 @@ $("#contact").click(function() {
 
 
 
-$(document).ready(function () {
+    $(document).ready(function() {
 
-    var menu = $('.menu');
-    var origOffsetY = menu.offset().top;
+      /*
+       *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+       */
 
-    function scroll() {
-        if ($(window).scrollTop() >= origOffsetY) {
-            $('.menu').addClass('sticky');
-            $('.content').addClass('menu-padding');
-        } else {
-            $('.menu').removeClass('sticky');
-            $('.content').removeClass('menu-padding');
+      $('.fancybox-thumbs').fancybox({
+        prevEffect : 'none',
+        nextEffect : 'none',
+
+        closeBtn  : false,
+        arrows    : false,
+        nextClick : true,
+
+        helpers : {
+          thumbs : {
+            width  : 100,
+            height : 100
+          }
         }
+      });
 
 
-    }
-
-    document.onscroll = scroll;
-
-
-$('.fancybox-thumbs').fancybox({
-				prevEffect : 'none',
-				nextEffect : 'none',
-
-				closeBtn  : false,
-				arrows    : false,
-				nextClick : true,
-
-				helpers : {
-					thumbs : {
-						width  : 50,
-						height : 50
-					}
-				}
-			});
-
-});
-
+    });
