@@ -20,9 +20,6 @@ height: 100%;
 
 }
 
-.top {
-  position: fixed;
-  top: 0;
-  width:60%;
-  z-index: 999;
+.mynav {
+border-radius: 0;
 }
