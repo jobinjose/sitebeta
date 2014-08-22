@@ -36,21 +36,21 @@ $(document).ready(function () {
     document.onscroll = scroll;
 
 
-	$('.fancybox-thumbs').fancybox({
-		prevEffect : 'none',
-		nextEffect : 'none',
+$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
 
-		closeBtn  : false,
-		arrows    : false,
-		nextClick : true,
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
 
-		helpers : {
-			thumbs : {
-				width  : 50,
-				height : 50
-			}
-		}
-	});
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
 
 });
 

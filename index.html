@@ -16,12 +16,58 @@
 
     <!-- Custom styles for this template -->
     <link href="bootstrap/css/carousel.css" rel="stylesheet">
-
     <link href="custom/css/custom.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="gallery/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="gallery/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+  <!-- Add Thumbnail helper (this is optional) -->
+  <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      /*
+       *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+       */
+
+      $('.fancybox-thumbs').fancybox({
+        prevEffect : 'none',
+        nextEffect : 'none',
+
+        closeBtn  : false,
+        arrows    : false,
+        nextClick : true,
+
+        helpers : {
+          thumbs : {
+            width  : 100,
+            height : 100
+          }
+        }
+      });
+
+
+    });
+
+  </script>
+
+  <style type="text/css">
+    .fancybox-custom .fancybox-skin {
+      box-shadow: 0 0 50px #222;
+    }
+
+    body {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  </style>
+
 
   </head>
 <!-- NAVBAR
@@ -173,27 +219,35 @@
         </div>
       </div>
 
+      <a name="port"/>
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
 
       <!-- PORTFOLIO -->
 
-      <a name="port"/>
+
       <div class="row featurette">
 
         <div class="col-md-12">
-          <h2 class="featurette-heading">A few of my works.<span class="text-muted"></span></h2>
+          <h2 class="featurette-heading">A few of my works. <span class="text-muted"></span></h2>
 
-  <p>
-    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm8.staticflickr.com/7321/9537630990_15c7942145_z.jpg"><img src="https://farm8.staticflickr.com/7321/9537630990_15c7942145_s.jpg" alt="" /></a>
+            <p>
+              <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm8.staticflickr.com/7321/9537630990_15c7942145_z.jpg"><img class="img-thumbnail" src="https://farm8.staticflickr.com/7321/9537630990_15c7942145_m.jpg" alt="" /></a>
 
-    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm8.staticflickr.com/7321/9537630990_15c7942145_z.jpg"><img src="https://farm8.staticflickr.com/7321/9537630990_15c7942145_s.jpg" alt="" /></a>
+              <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm4.staticflickr.com/3676/9537627966_5e8a87d4f7_z.jpg"><img class="img-thumbnail" src="https://farm4.staticflickr.com/3676/9537627966_5e8a87d4f7_m.jpg" alt="" /></a>
 
-    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm8.staticflickr.com/7321/9537630990_15c7942145_z.jpg"><img src="https://farm8.staticflickr.com/7321/9537630990_15c7942145_s.jpg" alt="" /></a>
+              <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm8.staticflickr.com/7402/9537628572_516ac296cd_z.jpg"><img class="img-thumbnail" src="https://farm8.staticflickr.com/7402/9537628572_516ac296cd_m.jpg" alt="" /></a>
 
-    <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm8.staticflickr.com/7321/9537630990_15c7942145_z.jpg"><img src="https://farm8.staticflickr.com/7321/9537630990_15c7942145_s.jpg" alt="" /></a>
-  </p>
+              <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm8.staticflickr.com/7283/9537630364_d0abf54d28_z.jpg"><img class="img-thumbnail" src="https://farm8.staticflickr.com/7283/9537630364_d0abf54d28_m.jpg" alt="" /></a>
+
+              <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm9.staticflickr.com/8383/8643156266_ab7710eb67_z.jpg"><img class="img-thumbnail" src="https://farm9.staticflickr.com/8383/8643156266_ab7710eb67_m.jpg" alt="" /></a>
+
+              <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm9.staticflickr.com/8255/8642055673_887ab8d434_z.jpg"><img class="img-thumbnail" src="https://farm9.staticflickr.com/8255/8642055673_887ab8d434_m.jpg" alt="" /></a>
+
+              <a class="fancybox-thumbs" data-fancybox-group="thumb" href="https://farm9.staticflickr.com/8257/8643156420_e7a7018553_z.jpg"><img class="img-thumbnail" src="https://farm9.staticflickr.com/8257/8643156420_e7a7018553_m.jpg" alt="" /></a>
+
+            </p>
 
 
         </div>
@@ -218,14 +272,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/docs.min.js"></script>
     <script src="custom/js/custom.js"></script>
 
-    <!-- Add fancyBox main JS and CSS files -->
-    <script type="text/javascript" src="gallery/jquery.fancybox.js?v=2.1.5"></script>
-    <script type="text/javascript" src="gallery/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 
 
