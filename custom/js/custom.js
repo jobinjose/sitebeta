@@ -11,9 +11,18 @@ $("#portfolio").click(function() {
    scrollToAnchor('port');
 });
 
+$("#about").click(function() {
+   scrollToAnchor('start');
+});
+
+$("#home").click(function() {
+   scrollToAnchor('start');
+});
+
 $("#contact").click(function() {
    scrollToAnchor('cont');
 });
+
 
 
 $(document).ready(function () {
