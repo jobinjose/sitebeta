@@ -14,19 +14,71 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-
     <!-- Custom styles for this template -->
     <link href="bootstrap/css/carousel.css" rel="stylesheet">
-
     <link href="custom/css/custom.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+  <!-- Add Thumbnail helper (this is optional) -->
+  <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      /*
+       *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+       */
+
+      $('.fancybox-thumbs').fancybox({
+        prevEffect : 'none',
+        nextEffect : 'none',
+
+        closeBtn  : false,
+        arrows    : false,
+        nextClick : true,
+
+        helpers : {
+          thumbs : {
+            width  : 100,
+            height : 100
+          }
+        }
+      });
+
+
+    });
+
+  </script>
+
+  <style type="text/css">
+    .fancybox-custom .fancybox-skin {
+      box-shadow: 0 0 50px #222;
+    }
+
+    body {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  </style>
+
+
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
+
+    <a name="start"/>
+
     <div class="navbar-wrapper">
       <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="navbar navbar-inverse navbar-fixed-top" style="border-radius:0px;" role="navigation">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,36 +87,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Jobin Jose</a>
+              <a class="navbar-brand active" id="home">Jobin Jose</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a id = "contact" href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
+                <li><a id = "about"  href="#about">About me</a></li>
+                <li><a id = "tech" href="#tech">My skills</a></li>
+                <li><a id = "portfolio" href="#portfolio">My work</a></li>
+                <li><a id = "contact" href="#contact">Contact me</a></li>
               </ul>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 
 
+
     <!-- Carousel
     ================================================== -->
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -177,15 +219,77 @@
         </div>
       </div>
 
+      
       <hr class="featurette-divider">
+      <a name="port"></a>
 
       <!-- /END THE FEATURETTES -->
+
+      <!-- PORTFOLIO -->
+
+
+      <div class="row featurette">
+
+        <div class="col-md-12">
+          <h2 class="featurette-heading">A few of my works. <span class="text-muted"></span></h2>
+
+
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <a class="fancybox-thumbs thumbnail" data-fancybox-group="thumb" href="https://farm8.staticflickr.com/7321/9537630990_15c7942145_z.jpg"><img src="https://farm8.staticflickr.com/7321/9537630990_15c7942145_z.jpg" alt="" /></a>   
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <a class="fancybox-thumbs thumbnail" data-fancybox-group="thumb" href="https://farm4.staticflickr.com/3676/9537627966_5e8a87d4f7_z.jpg"><img class="img-thumbnail" src="https://farm4.staticflickr.com/3676/9537627966_5e8a87d4f7_z.jpg" alt="" /></a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <a class="fancybox-thumbs thumbnail" data-fancybox-group="thumb" href="https://farm8.staticflickr.com/7402/9537628572_516ac296cd_z.jpg"><img class="img-thumbnail" src="https://farm8.staticflickr.com/7402/9537628572_516ac296cd_z.jpg" alt="" /></a> 
+            </div>
+
+
+
+            <div class="col-xs-6 col-md-3">
+              <a class="fancybox-thumbs thumbnail" data-fancybox-group="thumb" href="https://farm9.staticflickr.com/8400/8642055713_4fbea5885f_z.jpg"><img class="img-thumbnail" src="https://farm9.staticflickr.com/8400/8642055713_4fbea5885f_z.jpg" alt="" /></a> 
+            </div>
+
+
+
+            <div class="col-xs-6 col-md-3">
+              <a class="fancybox-thumbs thumbnail" data-fancybox-group="thumb" href="https://farm9.staticflickr.com/8257/8643156420_e7a7018553_z.jpg"><img class="img-thumbnail" src="https://farm9.staticflickr.com/8257/8643156420_e7a7018553_m.jpg" alt="" /></a> 
+            </div>
+
+
+            <div class="col-xs-6 col-md-3">
+              <a class="fancybox-thumbs thumbnail" data-fancybox-group="thumb" href="https://farm9.staticflickr.com/8383/8643156266_ab7710eb67_z.jpg"><img class="img-thumbnail" src="https://farm9.staticflickr.com/8383/8643156266_ab7710eb67_m.jpg" alt="" /></a>  
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <a class="fancybox-thumbs thumbnail" data-fancybox-group="thumb" href="https://farm9.staticflickr.com/8255/8642055673_887ab8d434_z.jpg"><img class="img-thumbnail" src="https://farm9.staticflickr.com/8255/8642055673_887ab8d434_m.jpg" alt="" /></a>  
+            </div>      
+
+            <div class="col-xs-6 col-md-3">
+              <a class="fancybox-thumbs thumbnail" data-fancybox-group="thumb" href="https://farm8.staticflickr.com/7283/9537630364_d0abf54d28_z.jpg"><img class="img-thumbnail" src="https://farm8.staticflickr.com/7283/9537630364_d0abf54d28_m.jpg" alt="" /></a>  
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <a class="fancybox-thumbs thumbnail" data-fancybox-group="thumb" href="https://farm9.staticflickr.com/8115/8642055897_7bf831bee8_z.jpg"><img class="img-thumbnail" src="https://farm9.staticflickr.com/8115/8642055897_7bf831bee8_z.jpg" alt="" /></a> 
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+      <!-- /END THE PORTFOLIO -->
 
       <a name="cont"/>
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p class="pull-right"><a id="top" href="#">Back to top</a></p>
+        <p>&copy; 2014 Jobin Jose &middot; <a target="_blank" href="http://getbootstrap.com/">Built with Bootstrap</a> <a href="#"></a></p>
       </footer>
 
     </div><!-- /.container -->
@@ -194,9 +298,15 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/docs.min.js"></script>
     <script src="custom/js/custom.js"></script>
+
+
+
+
   </body>
 </html>
