@@ -31,3 +31,9 @@ border-radius: 0;
 body {
   margin: 0 auto;
 }
+
+#social img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
