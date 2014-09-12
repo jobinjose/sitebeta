@@ -32,14 +32,7 @@
 
 
   <style type="text/css">
-    .fancybox-custom .fancybox-skin {
-      box-shadow: 0 0 50px #222;
-    }
 
-    body {
-      max-width: 100%;
-      margin: 0 auto;
-    }
   </style>
 
 
@@ -67,7 +60,9 @@
               <ul class="nav navbar-nav">
                 <li><a id = "about"  href="#about">About me</a></li>
                 <li><a id = "tech" href="#tech">My skills</a></li>
+                <li><a id = "employers" href="#employers">My employers</a></li>
                 <li><a id = "portfolio" href="#portfolio">My work</a></li>
+                <li><a id = "resume" target="blank" href="JobinJose - Resume.pdf">Resume</a></li>
                 <li><a id = "contact" href="#contact">Contact me</a></li>
               </ul>
             </div>
@@ -93,9 +88,9 @@
           <img src="images/4.png" class="img-responsive" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h3>Hi. I am Jobin.</h3>
+              <h1>Welcome to my space in the Web.</h1>
+              <p>Here, you can learn more about me and my work.</p>
             </div>
           </div>
         </div>
@@ -152,45 +147,73 @@
           <p><a class="btn btn-default" href="#" role="button">I'm Interested &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+     
+     <a name="employ"></a>
+     <hr class="featurette-divider">
 
-
+     
       <!-- START THE FEATURETTES -->
+    <div class="page-header">
+      <h1>Organisations I've worked for. </h1>
+      <h1><small>So, this section here sums up my professional experience in a nutshell. </small></h1>
 
-      <hr class="featurette-divider">
+    </div>
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <div id="myCarousel2" class="carousel slide container-fluid" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel2" data-slide-to="1"></li>
+        <li data-target="#myCarousel2" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div id="car1" class="item active" >
+          <img src="work/back.jpg" class="img-responsive" alt="First slide">
+            <div class="row featurette">
+              <div class="col-md-6">
+                <img src="work/broad.png" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Broadcom Logo goes here">
+              </div>
+              <div class="row col-md-1"></div>
+              <div class="row col-md-5">
+                <h2 class="featurette-heading">Broadcom</h2><h3><span class="text-muted">QA Engineer</span> <small>May 2014 - Present</small></h3>
+                <p class="lead">My role here is to ensure that the Device drivers developed by Broadcom meets the Hardware Certification Specifications set forth by Microsoft. I enjoy the life among previously unseen Tech; and also tinkering with them.</p>
+              </div>
+            </div>
         </div>
-        <div class="col-md-5">
-          <img src="images/1.jpg" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        <div id="car2" class="item">
+          <img src="work/back.jpg" class="img-responsive" alt="Second slide">
+            <div class="row featurette">
+              <div class="col-md-6">
+                <img src="work/cog.png" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Cognicor Logo goes here">
+              </div>
+              <div class="row col-md-1"></div>
+              <div class="col-md-5">
+                <h2 class="featurette-heading">Cognicor</h2><h3><span class="text-muted">Intern - Development</span> <small>2 Months</small></h3>
+                <p class="lead">Based in Spain, This Startup gave me an exposure to the Development world like no other. On top of letting me work on real problems, They taught me important things like Teamwork and communication. Learned a lot here.</p>
+              </div>
+            </div>
+        </div>
+        <div id="car3" class="item">
+          <img src="work/back.jpg" class="img-responsive" alt="Third slide">
+            <div class="row featurette">
+              <div class="col-md-6">
+                <img src="work/verb.png" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Verbicio Logo goes here">
+              </div>
+              <div class="row col-md-1"></div>
+              <div class="col-md-5">
+                <h2 class="featurette-heading">Verbicio</h2><h3><span class="text-muted">Intern - Design</span> <small>2 Weeks</small></h3>
+                <p class="lead">My first employer. My primary role here was to develop content and slides. But Impressed by my design skills, they moved me into the design department. I also had a chance to work with some of the most creative minds in Kochi; before getting the offer from Cognicor.</p>
+              </div>
+
+            </div>
         </div>
       </div>
+      <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 
-      <hr class="featurette-divider">
+    
 
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img src="images/2.jpg" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img src="images/3.jpg" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
 
       
       <hr class="featurette-divider">
@@ -299,7 +322,7 @@
         <p class="pull-right"><a id="top" href="#">Back to top</a></p>
         <p>&copy; 2014 Jobin Jose &middot; <a target="_blank" href="http://getbootstrap.com/">Built with Bootstrap</a> <a href="#"></a></p>
       </footer>
-
+      </div>
     </div><!-- /.container -->
 
 

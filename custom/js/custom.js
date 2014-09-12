@@ -19,6 +19,10 @@ $("#home").click(function() {
    scrollToAnchor('start');
 });
 
+$("#employers").click(function() {
+   scrollToAnchor('employ');
+});
+
 $("#contact").click(function() {
    scrollToAnchor('cont');
 });
