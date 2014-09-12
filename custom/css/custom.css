@@ -3,8 +3,10 @@
 height: 100%;
 
 
-
 }
+
+#myCarousel h3
+{font-size: 60px;}
 
 #car2 img
 {
@@ -67,6 +69,6 @@ body {
 #myCarousel2 .carousel-control:focus {
   color: #fff;
   text-decoration: none;
-  filter: alpha(opacity=100);
+  filter: alpha(opacity=1);
   outline: 0;
 

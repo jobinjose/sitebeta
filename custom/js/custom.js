@@ -11,8 +11,8 @@ $("#portfolio").click(function() {
    scrollToAnchor('port');
 });
 
-$("#about").click(function() {
-   scrollToAnchor('start');
+$("#skills").click(function() {
+   scrollToAnchor('skill');
 });
 
 $("#home").click(function() {
