@@ -11,12 +11,16 @@ $("#portfolio").click(function() {
    scrollToAnchor('port');
 });
 
-$("#about").click(function() {
-   scrollToAnchor('start');
+$("#skills").click(function() {
+   scrollToAnchor('skill');
 });
 
 $("#home").click(function() {
    scrollToAnchor('start');
+});
+
+$("#employers").click(function() {
+   scrollToAnchor('employ');
 });
 
 $("#contact").click(function() {
